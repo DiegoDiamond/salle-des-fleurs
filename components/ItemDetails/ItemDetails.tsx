@@ -5,7 +5,6 @@ import styles from './ItemDetails.module.scss'
 import Slider from '../Slider/Slider'
 import BlockButtonsBuy from '../Item/BlockButtonsBuy/BlockButtonsBuy'
 import { useAppDispatch, useAppSelector } from '../../redux/hooks'
-import { RootState } from '../../redux/store'
 import { bookmarkAddAction, bookmarkRemoveAction } from '../../redux/reducers/modalReducer'
 
 const ItemDetails = ({ itemData }) => {
@@ -13,14 +12,7 @@ const ItemDetails = ({ itemData }) => {
 
     const dispatch = useAppDispatch()
 
-    const { bookmarksActive, inputValues } = useAppSelector(
-        ({ modal }): RootState => {
-            return {
-                bookmarksActive: modal.bookmarksActive,
-                inputValues: modal.inputValues,
-            }
-        }
-    )
+    const bookmarksActive = useAppSelector(({ modal }): Array<number> => modal.bookmarksActive)
 
     const bookmark = bookmarksActive.includes(id)
 

@@ -3,13 +3,17 @@ import cls from 'classnames'
 import styles from './BlockButtonsBuy.module.scss'
 import { useAppDispatch, useAppSelector } from '../../../redux/hooks'
 import { inputValueChangeAction } from '../../../redux/reducers/modalReducer'
-import { RootState } from '../../../redux/store'
 import { updateCartItemsAction } from '../../../redux/reducers/cartReducer'
+
+type Root = {
+    inputValues: Array<{ id: number; inputValue: number }>
+    cartItems: Array<number>
+}
 
 export default function BlockButtonsBuy({ id, disabled = false }) {
     const dispatch = useAppDispatch()
     const { inputValues, cartItems } = useAppSelector(
-        ({ modal, cart }): RootState => {
+        ({ modal, cart }): Root => {
             return {
                 inputValues: modal.inputValues,
                 cartItems: cart.cartItems,
