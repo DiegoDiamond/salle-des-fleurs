@@ -1,4 +1,4 @@
-Preview: https://salle-des-fleurs.vercel.app/products
+Pet-project preview: https://salle-des-fleurs.vercel.app/products
 
 ## Используемый стэк
 - Next.js
@@ -8,6 +8,16 @@ Preview: https://salle-des-fleurs.vercel.app/products
 - axios
 - classnames
 - Bootstrap Icons \ Font Awesome Icons
+
+## Функционал
+- Поиск (очистка ввода)
+- Сортировка по алфавиту, по цене
+- Сортировка по убыванию, по возрастанию
+- Счетчики количества товаров
+- Модальное окно
+- Слайдер
+- Корзина с удалением товаров
+- Хранилище на Redux
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
