@@ -1,0 +1,48 @@
+@import '../../styles/const.scss';
+
+.header {
+    grid-area: header;
+    background: $color-light-white;
+    border-bottom: 1px solid $color-grey;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    height: 155px;
+    margin: 0 auto;
+
+    img {
+        height: 120px;
+
+        &:last-child {
+            align-self: flex-end;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        margin: 65px 0 0 80px;
+        font-size: 40px;
+        font-family: 'Cinzel', serif;
+        cursor: pointer;
+    }
+
+    &__title-top {
+        position: absolute;
+        margin: 35px 0 0 200px;
+        font-size: 24px;
+        font-weight: 400;
+        cursor: default;
+    }
+
+    &__title-bottom {
+        position: absolute;
+        margin: 115px 0 0 80px;
+        font-size: 22px;
+        font-weight: 400;
+        cursor: default;
+    }
+}

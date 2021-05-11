@@ -1,0 +1,41 @@
+@import '../../../styles/const.scss';
+
+.block__buy {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-button {
+        width: 60%;
+        grid-column: 1/2;
+        padding: 5px 10px;
+        border: 1px solid #373944;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background: $color-grey;
+            color: $color-pink;
+            border: 1px solid $color-pink;
+            border-radius: 2rem;
+        }
+    }
+    &-counter {
+        width: 2rem;
+        text-align: center;
+        cursor: default;
+        pointer-events: none;
+    }
+    &-icon {
+        grid-column: 2/3;
+        font-size: 24px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-pink;
+        }
+    }
+}

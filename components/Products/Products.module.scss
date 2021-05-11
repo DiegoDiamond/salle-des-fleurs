@@ -1,0 +1,17 @@
+@import '../../styles/const.scss';
+
+.products {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 50px auto;
+    height: 100%;
+}
+.items {
+    grid-row: 2/3;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    height: 100%;
+}

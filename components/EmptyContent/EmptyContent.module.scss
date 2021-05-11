@@ -1,0 +1,22 @@
+@import '../../styles/const.scss';
+
+.empty {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    &__inner {
+        background: $color-light-white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 48px;
+    }
+    &__page-name {
+        font-size: 56px;
+    }
+}

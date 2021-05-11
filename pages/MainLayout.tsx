@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './index.module.scss'
 import { LeftSidebar, RightSidebar, Header, Content } from '../components'
 
-export default function Home() {
+export default function MainLayout({ children }) {
     return (
         <div className={styles.wrapper}>
             <Head>
@@ -12,7 +12,7 @@ export default function Home() {
             </Head>
             <Header />
             <LeftSidebar />
-            <Content />
+            <Content>{children}</Content>
             <RightSidebar />
         </div>
     )

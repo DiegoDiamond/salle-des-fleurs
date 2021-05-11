@@ -1,0 +1,28 @@
+.navigation__item {
+    border: 1px solid #e7edf2;
+    border-width: 1px 0;
+    padding: 0.6rem 0 0.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #5a0d67;
+        background: #e6e8eb;
+        .navigation__item-icon,
+        .navigation__item-link {
+            color: #5a0d67;
+        }
+    }
+
+    &-icon {
+        color: #838daa;
+        font-size: 32px;
+    }
+
+    &-link {
+        display: block;
+        color: #838daa;
+        text-decoration: none;
+        // transition: all 0.5s;
+    }
+}

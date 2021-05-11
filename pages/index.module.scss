@@ -1,0 +1,10 @@
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        'leftSidebar header header'
+        'leftSidebar main-content members';
+    grid-template-rows: 155px auto;
+    grid-template-columns: 1fr 5fr 12%;
+    font-family: 'Alegreya', 'serif';
+    height: 100vh;
+}

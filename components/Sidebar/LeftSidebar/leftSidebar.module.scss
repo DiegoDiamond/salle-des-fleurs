@@ -1,0 +1,8 @@
+@import '../../../styles/const.scss';
+
+.leftSidebar {
+    grid-area: leftSidebar;
+    height: 100%;
+    background: $color-light-white;
+    /* background: #373944; */
+}
