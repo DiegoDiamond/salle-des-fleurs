@@ -1,3 +1,5 @@
+Preview: https://salle-des-fleurs.vercel.app/products
+
 ## Используемый стэк
 - Next.js
 - React.js
