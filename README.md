@@ -1,3 +1,12 @@
+## Используемый стэк
+- Next.js
+- React.js
+- Redux
+- SASS
+- axios
+- classnames
+- Bootstrap Icons \ Font Awesome Icons
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
